@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+:root {
+  --purple: #7a2e8883;
+  --green: rgba(40, 155, 27, 0.763);
+  --light-white: rgb(0, 0, 0);
+  --black: #bab7b72f;
+  --light-bg: #bab7b72f;
+}
+
+.preloaderslow{
+   display: none !important;
+}
+
+#preloader {
+  background: rgb(255, 255, 255) url(images/load2.gif) no-repeat center center;
+  background-size: 25%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  max-width: unset;
+}
+
+
+.myclass:hover {
+  background-color: var(--purple);
+  color: var(--light-white);
+}
+
+.myclass{
+background-color: var(--light-bg);
+font-size: 1.2rem;   
+flex-wrap: wrap;
+gap: 1.2rem;
+border-radius:5px;;
+position: absolute;
+
+      left: 775px;
+      top: 550px;
+
+text-transform: uppercase;
+
+
+}
+
+
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background-color: var(--purple);
+  color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+
+/* bar */
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 5rem;
+}
+
+/* bar end */
+
+body {
+  background-color: var(--black);
+}
+
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btn {
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  background-color: var(--light-bg);
+  cursor: pointer;
+  color: var(--purple);
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background-color: var(--light-bg);
+  color: var(--light-bg);
+}
+
+.heading {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--purple);
+  text-transform: uppercase;
+}
+
+.heading span {
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.z{
+margin-top: 100px;
+
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--light-bg);
+}
+
+.header .box-con {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .box-con .logo {
+  font-size: 2.5rem;
+  color: var(--purple);
+}
+
+.header .box-con .navbar a {
+  margin-left: 2rem;
+  color: var(--light-white);
+  font-size: 2rem;
+}
+
+.header .box-con .navbar a:hover {
+  color: var(--purple);
+}
+
+
+
+.home {
+  margin-top: 6rem;
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  flex: 2 6 5rem;
+  text-align: center;
+}
+
+.home .row .image {
+  flex: 1 1 40rem;
+}
+
+.home .row .image img {
+  width: 100%;
+}
+
+.home .row .content h3 {
+  margin-bottom: 1rem;
+  font-size: 10rem;
+  color: var(--green);
+  line-height: 1;
+}
+
+.home .row .content h3 span {
+  color: var(--purple);
+}
+
+.contact span {
+  color: var(--green);
+}
+
+.courses .box-container:hover {
+  border-radius: 5px;
+  background-color: var(--light-bg);
+}
+
+.courses .box-container {
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.courses .box-container .box {
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.courses .box-container .box i {
+  font-size: 5rem;
+  color: var(--purple);
+}
+
+.courses .box-container .box .content h3 {
+  font-size: 2rem;
+  color: var(--purple);
+  margin-bottom: 0.5rem;
+}
+
+.courses .box-container .box .content p {
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+/* about */
+
+.about .row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about .row .image {
+  padding-top: 8rem;
+  flex: 1 1 40rem;
+}
+
+.about .row .image img {
+  width: 120%;
+}
+
+.about .row .content {
+  text-align: center;
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: var(--purple);
+}
+
+.about .row .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+/* about ends */
+
+/* courses slider */
+
+.courses .slide {
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  user-select: none;
+}
+
+.courses .slide img {
+  height: 25rem;
+  width: 100%;
+}
+
+.courses .slide h3 {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.courses .slide p {
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+/* courses */
+
+/* reviews slider */
+
+.reviews-slider .slide {
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 2rem;
+  margin-bottom: 4rem;
+  user-select: none;
+}
+
+.reviews-slider .slide p {
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+.reviews-slider .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.reviews-slider .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews-slider .slide .user h3 {
+  font-size: 2rem;
+  color: var(--purple);
+  margin-bottom: 0.7rem;
+}
+
+.reviews-slider .slide .user .stars i {
+  font-size: 1.8rem;
+  color: var(--green);
+}
+
+/* reviews slider end */
+
+/* contact */
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact .row .image {
+  flex: 1 1 40rem;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+}
+
+.contact .row form .box {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  font-size: 1.8rem;
+  color: var(--green);
+  padding: 1.4rem;
+  text-transform: none;
+}
+
+.contact .row form span {
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+/* contact end */
+
+.footer {
+  background-color: var(--light-bg);
+  text-align: center;
+  /* padding-bottom: 7rem; */
+}
+
+.footer .share a {
+  margin: 0 0.3rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--purple);
+  background-color: var(--black);
+}
+
+.footer .share a:hover {
+  background-color: var(--purple);
+}
+
+.footer .credit {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  padding-top: 2.5rem;
+  border-top: 0.1rem solid var(--light-white);
+  font-size: 2rem;
+  color: var(--light-white);
+}
+
+.footer .credit span {
+  color: var(--green);
+}
