@@ -40,10 +40,7 @@ CREATE TABLE `contact_formm` (
 --
 
 INSERT INTO `contact_formm` (`id`, `name`, `number`, `email`, `support`) VALUES
-(1, 'Miraç', '2147483647', 'mmmirac_44@hotmail.com', 'Seo'),
-(2, 'Miraç', '2147483647', 'mmmirac_44@hotmail.com', 'Web Tasarım'),
-(3, 'Miraç', '05449164344', 'mmmirac_44@hotmail.com', 'Web Tasarım'),
-(4, 'Miraç', '05449164344', 'myilmaz.iybf20@iste.edu.tr', 'Grafik Tasarım');
+');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
